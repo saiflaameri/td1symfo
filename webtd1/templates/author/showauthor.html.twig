@@ -1,0 +1,8 @@
+
+
+{% block body %}
+    <h1>{{ author.username }}</h1>
+    <p>Email : {{ author.email }}</p>
+    <p>Nombre de livres : {{ author.nb_books }}</p>
+    <p>Photo : <img src="{{ asset(author.picture) }}" alt="Photo de l'auteur"></p>
+{% endblock %}
